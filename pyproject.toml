@@ -51,7 +51,9 @@ test_sources = [
 # pyqtdarktheme-fork is in-place pyqtdarktheme replacement for python 3.12
 requires = [
     "PySide6-Essentials==6.8.1",
-    "mediapipe==0.10.13",    
+    "PySide6-Addons==6.8.1",
+    "opencv-python-headless>=4.10.0",
+    "mediapipe>=0.10.14,<0.11",    
     "pyqtdarktheme-fork",
     "splines ~= 0.3.0",
     "piexif ~= 1.1.3",
@@ -136,6 +138,7 @@ system_requires = [
 ]
 
 linuxdeploy_plugins = [
+    "qt"
 ]
 
 [tool.briefcase.app.photoglimmer.linux.flatpak]
